@@ -12,7 +12,13 @@ import java.lang.*;
  */
 public class _841_KeysAndRooms {
     public static void main(String[] args) {
-        System.out.println(canVisitAllRooms(List.of(List.of(1), List.of(2), List.of(3), List.of())));
+        List<List<Integer>> rooms = Arrays.asList(
+                Arrays.asList(1),
+                Arrays.asList(2),
+                Arrays.asList(3),
+                Collections.emptyList()
+        );
+        System.out.println(canVisitAllRooms(rooms));
     }
 
     public static boolean canVisitAllRooms(List<List<Integer>> rooms) {
